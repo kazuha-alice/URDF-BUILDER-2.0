@@ -1,0 +1,109 @@
+{
+  "name": "urdf-builder",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Professional Electron desktop URDF/CAD editor for robotics.",
+  "author": "URDF Builder",
+  "type": "module",
+  "main": "src/electron/main.cjs",
+  "scripts": {
+    "dev": "node scripts/dev-electron.mjs",
+    "dev:vite": "vite --host 127.0.0.1 --force",
+    "build": "tsc -b && vite build",
+    "build:electron": "npm run build && electron-builder --win nsis dir --x64",
+    "start": "node scripts/start-electron.mjs",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "build": {
+    "appId": "com.urdfbuilder.desktop",
+    "productName": "URDF Builder",
+    "directories": {
+      "output": "project/electron",
+      "buildResources": "src/icons"
+    },
+    "files": [
+      "dist/**/*",
+      "src/electron/**/*",
+      "src/icons/**/*",
+      "package.json"
+    ],
+    "asar": true,
+    "artifactName": "URDF-Builder-${version}-${arch}.${ext}",
+    "win": {
+      "icon": "src/icons/icon.ico",
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        },
+        {
+          "target": "dir",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "signAndEditExecutable": false
+    },
+    "nsis": {
+      "artifactName": "URDF-Builder-Setup-${version}.${ext}",
+      "installerIcon": "src/icons/icon.ico",
+      "uninstallerIcon": "src/icons/icon.ico",
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "URDF Builder"
+    },
+    "publish": null
+  },
+  "dependencies": {
+    "@monaco-editor/react": "^4.7.0",
+    "@react-three/drei": "^10.7.7",
+    "@react-three/fiber": "^9.6.1",
+    "@tailwindcss/vite": "^4.3.0",
+    "@xyflow/react": "^12.10.2",
+    "chokidar": "^5.0.0",
+    "electron-store": "^11.0.2",
+    "fast-xml-parser": "^5.8.0",
+    "framer-motion": "^12.40.0",
+    "fs-extra": "^11.3.5",
+    "lucide-react": "^1.16.0",
+    "monaco-editor": "^0.55.1",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6",
+    "tailwindcss": "^4.3.0",
+    "three": "^0.184.0",
+    "three-mesh-bvh": "^0.9.10",
+    "urdf-loader": "^0.12.7",
+    "xmlbuilder2": "^4.0.3",
+    "zustand": "^5.0.13"
+  },
+  "overrides": {
+    "dompurify": "^3.3.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.29.0",
+    "@eslint/js": "^10.0.1",
+    "@rolldown/plugin-babel": "^0.2.3",
+    "@types/babel__core": "^7.20.5",
+    "@types/node": "^24.12.3",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@types/three": "^0.184.1",
+    "@vitejs/plugin-react": "^6.0.1",
+    "babel-plugin-react-compiler": "^1.0.0",
+    "electron": "^42.3.0",
+    "electron-builder": "^26.8.1",
+    "eslint": "^10.3.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.2",
+    "globals": "^17.6.0",
+    "typescript": "~6.0.2",
+    "typescript-eslint": "^8.59.2",
+    "vite": "^8.0.12"
+  }
+}

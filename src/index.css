@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+:root {
+  font-family:
+    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  letter-spacing: 0;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+body {
+  background: var(--app-bg, #121416);
+  color: var(--text-primary, #f4f0e8);
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button {
+  color: inherit;
+}
+
+.app-error-shell {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 24px;
+  background:
+    linear-gradient(145deg, rgba(110, 214, 197, 0.08), transparent 28%),
+    linear-gradient(315deg, rgba(216, 161, 74, 0.06), transparent 32%),
+    var(--app-bg, #121416);
+  color: var(--text-primary, #f4f0e8);
+}
+
+.app-error-card {
+  display: grid;
+  gap: 12px;
+  width: min(560px, 100%);
+  border: 1px solid var(--panel-border, rgba(255, 255, 255, 0.1));
+  border-radius: 18px;
+  padding: 18px;
+  background: var(--surface-glass, rgba(36, 41, 47, 0.66));
+  box-shadow: var(--shadow-soft, 0 16px 36px rgba(0, 0, 0, 0.26));
+}
+
+.app-error-card strong {
+  font-size: 15px;
+}
+
+.app-error-card p {
+  margin: 0;
+  color: var(--text-secondary, #c7c6bd);
+  font-size: 13px;
+}
+
+.app-error-card div {
+  display: flex;
+  gap: 8px;
+}
+
+.app-error-card button {
+  min-height: 34px;
+  border: 1px solid var(--panel-border, rgba(255, 255, 255, 0.1));
+  border-radius: 999px;
+  padding: 0 14px;
+  background: var(--button-bg, rgba(255, 255, 255, 0.06));
+  color: var(--text-primary, #f4f0e8);
+}
