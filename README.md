@@ -1,151 +1,73 @@
-<style>
-  .urdf-readme {
-    --bg: #0b0f12;
-    --panel: #151a1f;
-    --panel-2: #1d242a;
-    --line: #344047;
-    --text: #eef6f4;
-    --muted: #99a7ac;
-    --teal: #62e6d3;
-    --green: #7adf8b;
-    --amber: #f5b45b;
-    --blue: #69a7ff;
-    color: var(--text);
-    background:
-      radial-gradient(circle at 18% 0%, rgba(98, 230, 211, 0.18), transparent 32%),
-      linear-gradient(145deg, #0b0f12 0%, #12171b 45%, #0b0f12 100%);
-    border: 1px solid var(--line);
-    border-radius: 28px;
-    padding: 28px;
-    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  }
-
-  .hero-card,
-  .glass-card,
-  .demo-player,
-  .feature-tile {
-    background: linear-gradient(145deg, rgba(31, 39, 45, 0.94), rgba(18, 23, 27, 0.96));
-    border: 1px solid rgba(131, 156, 164, 0.24);
-    border-radius: 22px;
-    box-shadow: 0 22px 60px rgba(0, 0, 0, 0.28);
-  }
-
-  .hero-title {
-    font-size: 44px;
-    margin: 0;
-    line-height: 1.06;
-  }
-
-  .pill {
-    display: inline-block;
-    padding: 8px 12px;
-    border: 1px solid rgba(98, 230, 211, 0.38);
-    border-radius: 999px;
-    background: rgba(98, 230, 211, 0.1);
-    color: var(--teal);
-    font-size: 12px;
-    font-weight: 700;
-  }
-
-  .muted {
-    color: var(--muted);
-  }
-
-  .metric {
-    font-size: 24px;
-    font-weight: 800;
-    color: var(--teal);
-  }
-
-  .screen {
-    border-radius: 18px;
-    border: 1px solid rgba(131, 156, 164, 0.24);
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
-  }
-
-  .demo-player video {
-    width: 100%;
-    border-radius: 18px;
-    border: 1px solid rgba(131, 156, 164, 0.24);
-    display: block;
-  }
-</style>
-
-<div class="urdf-readme">
-  <div class="hero-card" align="center">
-    <br />
-    <img src="src/icons/urdf-builder.png" alt="URDF Builder logo" width="96" />
-    <p>
-      <span class="pill">ONE UI 8.5-STYLE ROBOTICS WORKBENCH</span>
-    </p>
-    <h1 class="hero-title">URDF Builder 2.0</h1>
-    <p class="muted">
-      A modern Electron desktop studio for authoring, inspecting, transforming, and packaging URDF robot descriptions.
-    </p>
-    <p>
-      <img alt="Electron" src="https://img.shields.io/badge/Electron-42-5ad7cf?style=for-the-badge&logo=electron&logoColor=0f1720" />
-      <img alt="React" src="https://img.shields.io/badge/React-19-61dafb?style=for-the-badge&logo=react&logoColor=0f1720" />
-      <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-6-3178c6?style=for-the-badge&logo=typescript&logoColor=white" />
-      <img alt="Vite" src="https://img.shields.io/badge/Vite-8-646cff?style=for-the-badge&logo=vite&logoColor=white" />
-      <img alt="Three.js" src="https://img.shields.io/badge/Three.js-Viewport-111827?style=for-the-badge&logo=threedotjs&logoColor=white" />
-      <img alt="License" src="https://img.shields.io/badge/License-Apache_2.0-f5b45b?style=for-the-badge" />
-    </p>
-    <br />
-  </div>
-
-  <br />
-
-  <img class="screen" src="readme_assets/01.png" alt="URDF Builder dashboard with template gallery and recent projects" width="100%" />
-
-  <br />
-  <br />
-
-  <table>
-    <tr>
-      <td align="center" width="25%">
-        <div class="metric">Electron</div>
-        <strong>native desktop</strong><br />
-        <span class="muted">frameless windows</span>
-      </td>
-      <td align="center" width="25%">
-        <div class="metric">Three.js</div>
-        <strong>robot viewport</strong><br />
-        <span class="muted">URDF mesh loading</span>
-      </td>
-      <td align="center" width="25%">
-        <div class="metric">Monaco</div>
-        <strong>XML studio</strong><br />
-        <span class="muted">tabs, outline, format</span>
-      </td>
-      <td align="center" width="25%">
-        <div class="metric">Zustand</div>
-        <strong>sync pipeline</strong><br />
-        <span class="muted">editor, model, scene</span>
-      </td>
-    </tr>
-  </table>
+<div align="center">
+  <img src="readme_assets/readme-hero.svg" alt="URDF Builder 2.0 - One UI inspired robotics workbench" width="100%" />
 </div>
+
+<p align="center">
+  <img alt="Electron" src="https://img.shields.io/badge/Electron-42-5ad7cf?style=for-the-badge&logo=electron&logoColor=0f1720" />
+  <img alt="React" src="https://img.shields.io/badge/React-19-61dafb?style=for-the-badge&logo=react&logoColor=0f1720" />
+  <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-6-3178c6?style=for-the-badge&logo=typescript&logoColor=white" />
+  <img alt="Vite" src="https://img.shields.io/badge/Vite-8-646cff?style=for-the-badge&logo=vite&logoColor=white" />
+  <img alt="Three.js" src="https://img.shields.io/badge/Three.js-Viewport-111827?style=for-the-badge&logo=threedotjs&logoColor=white" />
+  <img alt="License" src="https://img.shields.io/badge/License-Apache_2.0-f5b45b?style=for-the-badge" />
+</p>
+
+<p align="center">
+  <b>URDF Builder 2.0</b> is a modern Electron desktop studio for authoring, inspecting, transforming,
+  previewing, and packaging URDF robot descriptions.
+</p>
+
+<p align="center">
+  <a href="#live-demo"><b>Live Demo</b></a> |
+  <a href="#screenshots"><b>Screenshots</b></a> |
+  <a href="#feature-matrix"><b>Features</b></a> |
+  <a href="#getting-started"><b>Getting Started</b></a> |
+  <a href="#windows-distribution"><b>Windows Build</b></a>
+</p>
+
+<br />
+
+<div align="center">
+  <img src="readme_assets/01.png" alt="URDF Builder dashboard with template gallery and recent projects" width="100%" />
+</div>
+
+<br />
+
+<table>
+  <tr>
+    <td align="center" width="25%">
+      <h3>Electron</h3>
+      <b>native desktop</b><br />
+      <sub>frameless windows, native dialogs</sub>
+    </td>
+    <td align="center" width="25%">
+      <h3>Three.js</h3>
+      <b>robot viewport</b><br />
+      <sub>URDF mesh loading and transforms</sub>
+    </td>
+    <td align="center" width="25%">
+      <h3>Monaco</h3>
+      <b>XML studio</b><br />
+      <sub>tabs, outline, format, hover docs</sub>
+    </td>
+    <td align="center" width="25%">
+      <h3>Zustand</h3>
+      <b>sync pipeline</b><br />
+      <sub>editor draft, valid model, scene buffer</sub>
+    </td>
+  </tr>
+</table>
 
 ## Live Demo
 
-<div class="demo-player">
-  <video
-    src="readme_assets/_001.mp4"
-    poster="readme_assets/01.png"
-    autoplay
-    loop
-    muted
-    playsinline
-    controls
-    preload="metadata"
-    width="100%">
-    <a href="readme_assets/_001.mp4">
-      <img src="readme_assets/01.png" alt="Open the URDF Builder demo video" width="100%" />
-    </a>
-  </video>
+<div align="center">
+  <video src="https://raw.githubusercontent.com/kazuha-alice/URDF-BUILDER-2.0/main/readme_assets/_001.mp4" poster="readme_assets/01.png" autoplay loop muted playsinline controls width="100%"></video>
+  <br />
+  <a href="readme_assets/_001.mp4">
+    <img src="readme_assets/01.png" alt="Open the URDF Builder demo video" width="100%" />
+  </a>
+  <br />
+  <sub>GitHub may hide HTML5 video on some README surfaces. The poster above links directly to the demo video.</sub>
 </div>
-
-> GitHub may sanitize native video playback on some README surfaces. If the player is not visible, open the demo directly: [readme_assets/_001.mp4](readme_assets/_001.mp4).
 
 ## Built Like A Robotics CAD Studio
 
@@ -171,26 +93,26 @@
 <table>
   <tr>
     <td>
-      <img class="screen" src="readme_assets/02.png" alt="URDF Builder viewport with hierarchy, transform gizmo, inspector, and controller panel" />
+      <img src="readme_assets/02.png" alt="URDF Builder viewport with hierarchy, transform gizmo, inspector, and controller panel" />
     </td>
   </tr>
   <tr>
-    <td align="center"><strong>Dockable workbench with viewport, hierarchy, inspector, and controller panels</strong></td>
+    <td align="center"><b>Dockable workbench with viewport, hierarchy, inspector, and controller panels</b></td>
   </tr>
 </table>
 
 <table>
   <tr>
     <td width="50%">
-      <img class="screen" src="readme_assets/03.png" alt="Native Windows URDF open dialog inside URDF Builder" />
+      <img src="readme_assets/03.png" alt="Native Windows URDF open dialog inside URDF Builder" />
     </td>
     <td width="50%">
-      <img class="screen" src="readme_assets/04.png" alt="Loaded AMR URDF robot with mesh rendering, outline, sensors, and transform controls" />
+      <img src="readme_assets/04.png" alt="Loaded AMR URDF robot with mesh rendering, outline, sensors, and transform controls" />
     </td>
   </tr>
   <tr>
-    <td align="center"><strong>Native Electron file workflow</strong></td>
-    <td align="center"><strong>Loaded AMR robot with visual and collision layers</strong></td>
+    <td align="center"><b>Native Electron file workflow</b></td>
+    <td align="center"><b>Loaded AMR robot with visual and collision layers</b></td>
   </tr>
 </table>
 
@@ -289,6 +211,6 @@ The project keeps generated and local-only files out of source control:
 
 Licensed under the Apache License 2.0. See [LICENSE](LICENSE).
 
-<div align="center">
+<p align="center">
   <sub>Built for robot builders who want the XML, the model, and the viewport to stay in one calm workspace.</sub>
-</div>
+</p>
