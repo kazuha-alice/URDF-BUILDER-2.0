@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="readme_assets/readme-hero.svg" alt="URDF Builder 2.0 - One UI inspired robotics workbench" width="100%" />
+  <img src="readme_assets/readme-hero.svg" alt="URDF Builder 2.0 robotics workbench" width="100%" />
 </div>
 
 <p align="center">
@@ -143,7 +143,7 @@
 | App | React 19, TypeScript, Vite, Zustand |
 | 3D | Three.js, React Three Fiber, Drei, URDF Loader |
 | Editor | Monaco Editor, fast-xml-parser, xmlbuilder2 |
-| Styling | Custom workbench CSS with One UI-inspired dark surfaces, compact cards, teal accents, and Windows 11-style chrome |
+| Styling | Custom workbench CSS with dark surfaces, compact cards, teal accents, and Windows 11-style chrome |
 
 ## Getting Started
 
