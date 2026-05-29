@@ -60,13 +60,9 @@
 ## Live Demo
 
 <div align="center">
-  <video src="https://raw.githubusercontent.com/kazuha-alice/URDF-BUILDER-2.0/main/readme_assets/_001.mp4" poster="readme_assets/01.png" autoplay loop muted playsinline controls width="100%"></video>
+  <img src="readme_assets/_001.gif" alt="URDF Builder dashboard and robotics workbench demo" width="100%" />
   <br />
-  <a href="readme_assets/_001.mp4">
-    <img src="readme_assets/01.png" alt="Open the URDF Builder demo video" width="100%" />
-  </a>
-  <br />
-  <sub>GitHub may hide HTML5 video on some README surfaces. The poster above links directly to the demo video.</sub>
+  <sub>Looping GIF preview of the dashboard, native file flow, viewport, hierarchy, and robot inspection workflow.</sub>
 </div>
 
 ## Built Like A Robotics CAD Studio
