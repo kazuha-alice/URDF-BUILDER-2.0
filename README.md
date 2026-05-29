@@ -8,12 +8,13 @@
   <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-6-3178c6?style=for-the-badge&logo=typescript&logoColor=white" />
   <img alt="Vite" src="https://img.shields.io/badge/Vite-8-646cff?style=for-the-badge&logo=vite&logoColor=white" />
   <img alt="Three.js" src="https://img.shields.io/badge/Three.js-Viewport-111827?style=for-the-badge&logo=threedotjs&logoColor=white" />
+  <img alt="Style" src="https://img.shields.io/badge/Style-One_UI_8.5-62e6d3?style=for-the-badge" />
   <img alt="License" src="https://img.shields.io/badge/License-Apache_2.0-f5b45b?style=for-the-badge" />
 </p>
 
 <p align="center">
   <b>URDF Builder 2.0</b> is a modern Electron desktop studio for authoring, inspecting, transforming,
-  previewing, and packaging URDF robot descriptions.
+  previewing, and packaging URDF robot descriptions with a polished One UI 8.5-style dark workbench.
 </p>
 
 <p align="center">
